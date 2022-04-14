@@ -1,9 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +17,94 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Advent Pro', sans-serif;
 }
+
+
+
+
+.item {
+  min-width: 16rem;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/background.jpg");
+
+  background-size: cover;
+  /* Full height */
+  height: 100%;
+
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_room {
+  border-radius: 40px;
+}
+
+.first_letter {
+  font-family: 'Berkshire Swash', cursive !important;
+  margin-right: 2px;
+  float: left;
+  font-size: 45px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+.simps_letter {
+  font-family: 'Shizuru', cursive !important;
+  margin-right: 2px;
+  float: left;
+  font-size: 50px;
+  line-height: 30px;
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
+
+.booking-box-header h1 {
+  display: none !important;
+}
+
+
+.donut {
+  animation: spin 20s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Typewriter__wrapper {
+  color: #86EFAC;
+  line-height: 45px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.Typewriter__cursor {
+  color: #86EFAC
+}
+
+
+.cool-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
